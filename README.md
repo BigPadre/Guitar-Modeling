@@ -10,6 +10,9 @@ will also look at deformation of a real object to reccomend modifications to geo
 # TO DO: 
 - Create central database for presets
 - Figure out how to have app that updates based on high level selections
+    - based on classes of objects that hold high level or geometry info for specfic aspects/parts
+    - high level info must be selected before geometry info
+    - possible update loop/persistence to allow for quick changes before/concurrently with fea module 
 - Figure out how to save and or export high level selections
 - Figure out how to save and or export geometry level selections
 - Figure out how to pass info to FEA module
