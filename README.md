@@ -17,7 +17,7 @@ Material Info:
     - Would rely mostly on manufacturer info for strings
     - Type of mats for hardware could be kind of interesting to get accurate info on
   
-  Geometry info:
+Geometry info:
 - Hardware locations, desired string action, part dims, some relative part dimensions
   - Standard parts like bolts very straight forward to measure accurately, could prelaod
   - Meant to be iterative for the sake of minimizing requried performance/patience to load additional geometry info
