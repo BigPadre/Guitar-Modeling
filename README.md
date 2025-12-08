@@ -7,6 +7,14 @@ also hopefully can improve accuracy to reality by feeding it more geometry info
 
 will also look at deformation of a real object to reccomend modifications to geometry or material choice with user preferences as the standard (action at certain frets, limits on neck size, etc...)
 
+# Current Organization:
+
+Main Branch: preliminary versions of scripts before being finalized
+
+Prelim Assembly Branch off of main is most finalized assembly of code
+
+Stability Data Branch: branch containing most up to date data sets/stats for measured instrument stability 
+
 # Info Input Modules
 Highest Level Info: 
 - Instrument family, number of strings, frets or not, desired tunings to simulate
@@ -60,6 +68,11 @@ Options for Element Types Ranked by Gut Feeling Usefulness:
       - Use phone app/clip on tuners for a start? No idea the freq resolution on those lol
 # TO DO: 
 - Create central database for presets
+    - Got some string tension excel from a forum, did some calcs to get a tension range
+    - prev online calc predicted half the tension given the same gague and note, calced fundamentals based on table tensions but they were consistently larger than target notes
+      - Measured mass/lenght of strings, referenced note frequency equivalents
+        - Only could register 6th and 5th mass
+      - Solving for fundamental using lower tension assumption by scaling the original by the sqrt of tension ratio, fundamentals come into far better agreement
 - Figure out how to have app that updates based on high level selections
     - based on classes of objects that hold high level or geometry info for specfic aspects/parts
     - high level info must be selected before geometry info
@@ -67,3 +80,9 @@ Options for Element Types Ranked by Gut Feeling Usefulness:
 - Figure out how to save and or export high level selections
 - Figure out how to save and or export geometry level selections
 - Figure out how to pass info to FEA module
+      - Neck Polygon Processing submodule confirmed generating geom params for fb region
+          -Need to integrate head+heel dims for compactness
+      - Need submodule for FEA sim data interfaces
+          - Accepts geom props from Neck Polygon Processing
+              - Other joints/major parts will be structured like Neck Poly, classes assembled together
+          - Need additional material props submodule
