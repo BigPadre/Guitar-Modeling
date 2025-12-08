@@ -80,7 +80,7 @@ Options for Element Types Ranked by Gut Feeling Usefulness:
 - Figure out how to save and or export high level selections
 - Figure out how to save and or export geometry level selections
 - Figure out how to pass info to FEA module
-- 
+
       - Neck Polygon Processing submodule confirmed generating geom params for fb region
   
           -Need to integrate head+heel dims for compactness
